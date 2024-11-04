@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
 img {
     max-width: 100%;
 }
@@ -16,9 +20,33 @@ a {
     --nav-darkgrey:#252830;
     --nav-notactive-white:#AFB6CD;
     --nav-white:#FFFFFF;
+
+    --bg-body:#131417;
+
+    --hr-color:#541C21;
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+/* h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+} */
+.bg-sec {
+    background-color: var(--bg-body);
 }
 
-
+.hr {
+    background-color: var(--hr-color);
+}
 .bg-nav {
     background-color: var(--nav-darkgrey);
 }
@@ -28,11 +56,74 @@ a {
 #navbarlink a,#sign a {
     color: var(--nav-notactive-white);
 }
+.relative {
+    position: relative;
+}
+.uzeri {
+    position: absolute;
+    left:18%;
+    top: 14%;
 
+    width: 25px;
+
+    transform: translate(-50%, -50%);
+}
+.uzeri2 {
+    position: absolute;
+    left: 89%;
+    top: 3%;
+
+    transform: translate(-50%,-50%);
+}
+.uzeri3 {
+    position: absolute;
+    left: 94%;
+    top: 6%;
+
+    transform: translate(-50%,-50%);
+}
+.uzeri4 {
+    position: absolute;
+    left: 93%;
+    top: 10%;
+
+    transform: translate(-50%,-50%);
+}
+.buyukyazı {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    
+    background-color: var(--bg-body);
+    opacity: 0.8;
+    padding: 1rem;
+
+    width: 591px;
+}
+.quick {
+    position: absolute;
+    top: 106%;
+    left: 7%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0.9;
+}
+.bold {
+    font-size:1.5rem ;
+    font-weight: bold;
+
+    opacity: 0.8;
+}
 @media screen and (max-width: 1024px) {
 
     .none {
         display: none;
     }
-    
+}
+
+@media screen and (max-width: 576px) {
+    .column {
+        flex-direction: column;
+    }
 }
