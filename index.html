@@ -25,7 +25,7 @@
         <div class="container d-flex justify-content-between">
             <div>
               <a href="#" class="color-nav">
-                <h2 class="text-white bold">NewsFlash</h2>
+                <h2 id="navbar-baslik" class="text-white bold">NewsFlash</h2>
               </a>
             </div>
             <div >
@@ -33,8 +33,8 @@
                 <img src="/image/8679893_menu_3_fill_icon.png" alt="#" style="width: 30px;">
               </button>
               <div class="collapse navbar-collapse" id="navbarlink">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
+                <ul id="navbarlink-li" class="navbar-nav me-auto">
+                    <li class="nav-item active">
                         <a href="#" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
@@ -59,13 +59,27 @@
                         <a href="#" class="nav-link">Sign up</a>
                     </li>
                 </ul>
+                <div id="sign" class="none1">
+                  <a href="#" class="none">
+                    <i class="ri-sun-line sun-icon"></i>
+                  </a>
+                  <a href="#" class="none">
+                    <i class="ri-search-line"></i>
+                  </a>
+                  <a href="#" class="btn none ">Sign in</a>
+                  <a href="#" class="btn sign none">Sign up</a>
+               </div>
               </div> 
             </div>
-            <div id="sign">
-              <a href="#"><img src="/image/5402400_dark_mode_moon_night_forecast_icon.png" class="me-3" alt="#" style="width: 30px;"></a>
-              <a href="#"><img src="/image/search.svg" alt="#" class="me-3"></a>
-              <a href="#" class="btn">Sign in</a>
-              <a href="#" class="btn">Sign up</a>
+            <div id="sign" class="none">
+              <a href="#" class="none">
+                <i class="ri-sun-line sun-icon"></i>
+              </a>
+              <a href="#" class="none">
+                <i class="ri-search-line"></i>
+              </a>
+              <a href="#" class="btn none ">Sign in</a>
+              <a href="#" class="btn sign none">Sign up</a>
            </div>
         </div>
       </nav>
@@ -76,42 +90,42 @@
         <div class="row">
           <div class="d-flex gap-3 column">
             <div class="col-9" style="height: 830px;">
-              <div class="bg-nav color-nav d-flex">
-                <button class="btn" type="button"><a href="#" class="color-nav">BREAKİNG NEWS</a></button>
-                <p class="text-center p-1">Apple announces a new partnership...</p>
+              <div id="breaking" class="bg-nav color-nav d-flex">
+                <button class="btn sign breaking" type="button">BREAKİNG NEWS</button>
+                <p class="ortalı-p">Apple announces a new partnership...</p>
               </div>
               <div class="d-flex column pt-3 gap-2 text-white">
                 <div class="col-6">
-                  <div class="relative">
+                  <div class="relative img-foto">
                     <span class="buyukyazı">
                       <p>Dec 5th 2021 - 8 Min read</p>
                       <h5>Is VR the future?</h5>
                     </span>
-                    <span class="bg-dark uzeri2 p-1">TECHNOLOGY</span>
-                    <img src="/image/featured-1.jpg" alt="#" style="height: 763px;">
+                    <span class="bg-dark uzeri2">TECHNOLOGY</span>
+                    <img class="" src="/image/featured-1.jpg" alt="#" style="height: 735px;">
                   </div>
                       
                 </div>
 
                 <div class="col-6 pe-2">
 
-                    <div class="relative">
+                    <div class="relative img-foto">
                       <span class="buyukyazı">
                         <p class="text-white">Dec 5th 2021 - 8 Min read</p>
                         <h5 class="text-white">Sample article title</h5>
                       </span>
-                      <span class="bg-dark text-white p-1 uzeri3">FOOD</span>
-                      <img src="/image/featured-2.jpg" alt="" style="height: 375px;">
+                      <span class="bg-dark text-white uzeri3">FOOD</span>
+                      <img src="/image/featured-2.jpg" alt="" style="height: 359px;">
                     </div>
                   
 
-                    <div class="relative pt-3">
+                    <div class="relative pt-3 img-foto">
                       <span class="buyukyazı">
                         <p class="text-white">Dec 5th 2021 - 8 Min read</p>
                         <h5 class="text-white">Sample article title</h5>
                       </span>
-                      <span class="bg-dark text-white p-1 uzeri4">HEALTH</span>
-                      <img src="/image/featured-3.jpg" alt="" style="height: 375px; width: 591px;">
+                      <span class="bg-dark text-white uzeri4">HEALTH</span>
+                      <img src="/image/featured-3.jpg" alt="" style="height: 359px; width: 591px;">
                     </div>
                   
 
@@ -120,77 +134,77 @@
             </div >
             <!-- div sonu -->
       
-            <div class="col-3 bg-nav" style="height: 830px;">
-              <h3 class="text-center text-white p-3">Trending news</h3>
+            <div id="trend" class="col-3 bg-nav" style="height: 808px;">
+              <h3 class="trend">Trending news</h3>
               <div>
 
-                <div class="d-flex border-bottom pt-2">
+                <div class="d-flex trend-sıralı">
 
                   <div class="col-4 text-white text-center relative">
                     <span class="bg-dark rounded-circle uzeri">01</span>
                     <img src="/image/trending_1.jpg" alt="#" class="p-3">
                   </div>
 
-                  <div class="text-white text-center col-8 ">
-                    <a href=""><p class="">23 Dec 2021 - 3 Min read</p></a>
-                    <a href=""><h5 class="">Sample article title</h5></a>
+                  <div class=" trend-bilgi col-8 ">
+                    <a href="#" class="trend-bilgi-tarih"><p class="">23 Dec 2021  -  3 Min read</p></a>
+                    <a href="#" ><h5  class="trend-bilgi-yazı">Sample article title</h5></a>
                   </div>
 
                 </div>
                 
 
-                <div class="d-flex border-bottom mt-3">
+                <div class="d-flex  trend-sıralı">
 
                   <div class="col-4 text-white text-center relative">
                     <span class="bg-dark rounded-circle uzeri">02</span>
                     <img src="/image/trending_2.jpg" alt="#" class="p-3">
                   </div>
 
-                  <div class="text-white text-center col-8">
-                    <a href=""><p class="">23 Dec 2021 - 3 Min read</p></a>
-                    <a href=""><h5 class="">Sample article title</h5></a>
+                  <div class="trend-bilgi col-8">
+                    <a href="" class="trend-bilgi-tarih"><p class="">23 Dec 2021 - 3 Min read</p></a>
+                    <a href=""><h5 class="trend-bilgi-yazı">Sample article title</h5></a>
                   </div>
 
                 </div>
 
-                <div class="d-flex border-bottom mt-3">
+                <div class="d-flex  trend-sıralı">
 
                   <div class="col-4 text-white text-center relative">
                     <span class="bg-dark rounded-circle uzeri">03</span>
                     <img src="/image/trending_3.jpg" alt="#" class="p-3">
                   </div>
 
-                  <div class="text-white text-center col-8">
-                    <a href=""><p class="">23 Dec 2021 - 3 Min read</p></a>
-                    <a href=""><h5 class="">Sample article title</h5></a>
+                  <div class="trend-bilgi col-8">
+                    <a href="" class="trend-bilgi-tarih"><p class="">23 Dec 2021 - 3 Min read</p></a>
+                    <a href=""><h5 class="trend-bilgi-yazı">Sample article title</h5></a>
                   </div>
 
                 </div>
 
-                <div class="d-flex border-bottom mt-3">
+                <div class="d-flex  trend-sıralı">
 
                   <div class="col-4 text-white text-center relative">
                     <span class="bg-dark rounded-circle uzeri">04</span>
                     <img src="/image/trending_4.jpg" alt="#" class="p-3">
                   </div>
 
-                  <div class="text-white text-center col-8">
-                    <a href=""><p class="">23 Dec 2021 - 3 Min read</p></a>
-                    <a href=""><h5 class="">Sample article title</h5></a>
+                  <div class="trend-bilgi col-8">
+                    <a href="" class="trend-bilgi-tarih"><p class="">23 Dec 2021 - 3 Min read</p></a>
+                    <a href=""><h5 class="trend-bilgi-yazı">Sample article title</h5></a>
                   </div>
 
                 </div>
 
-                <div class="d-flex mt-3">
+                <div class="d-flex  mt-3">
 
                   <div class="col-4 text-white text-center relative">
                     <span class="bg-dark rounded-circle uzeri">05</span>
                     <img src="/image/trending_5.jpg" alt="#" class="p-3">
                   </div>
 
-                  <div class="text-white text-center col-8">
-                    <a href=""><p class="">23 Dec 2021 - 3 Min read</p></a>
-                    <a href=""><h5 class="">Sample article title</h5></a>
+                  <div class="trend-bilgi col-8">
+                    <a href="" class="trend-bilgi-tarih"><p class="">23 Dec 2021 - 3 Min read</p></a>
+                    <a href=""><h5 class="trend-bilgi-yazı">Sample article title</h5></a>
                   </div>
 
                 </div>
@@ -207,7 +221,7 @@
     <section id="sıralı">
       <div class="container">
         <div style="position: relative;">
-          <h2 class="text-white bold">Quick read</h2>
+          <h2 class="text-white baslık-metin ">Quick read</h2>
           <h2 class="quick bold">QUİCK READ</h2>
         </div>
         <br>
@@ -215,43 +229,43 @@
           <div style="position: relative;">
             <img src="image/quick_read_1.jpg" alt="#">
             <span class="buyukyazı1 text-white">
-              <p>Dec 5th 2021 - 8 Min read</p>
-              <h5>Is VR the future?</h5>
+              <p class="buyukyazı1-p">Dec 5th 2021 - 8 Min read</p>
+              <h5 class="buyukyazı1-h5">Is VR the future?</h5>
             </span>
           </div>
           <div style="position: relative;">
             <img src="image/quick_read_2.jpg" alt="#">
             <span class="buyukyazı1 text-white">
-              <p>Dec 5th 2021 - 8 Min read</p>
-              <h5>Is VR the future?</h5>
+              <p class="buyukyazı1-p">Dec 5th 2021 - 8 Min read</p>
+              <h5 class="buyukyazı1-h5">Is VR the future?</h5>
             </span>
           </div>
           <div style="position: relative;">
             <img src="image/quick_read_3.jpg" alt="#">
             <span class="buyukyazı1 text-white">
-              <p>Dec 5th 2021 - 8 Min read</p>
-              <h5>Is VR the future?</h5>
+              <p class="buyukyazı1-p">Dec 5th 2021 - 8 Min read</p>
+              <h5 class="buyukyazı1-h5">Is VR the future?</h5>
             </span>
           </div>
           <div style="position: relative;">
             <img src="image/quick_read_4.jpg" alt="#">
             <span class="buyukyazı1 text-white">
-              <p>Dec 5th 2021 - 8 Min read</p>
-              <h5>Is VR the future?</h5>
+              <p class="buyukyazı1-p">Dec 5th 2021 - 8 Min read</p>
+              <h5 class="buyukyazı1-h5">Is VR the future?</h5>
             </span>
           </div>
           <div style="position: relative;">
             <img src="image/quick_read_5.jpg" alt="#">
             <span class="buyukyazı1 text-white">
-              <p>Dec 5th 2021 - 8 Min read</p>
-              <h5>Is VR the future?</h5>
+              <p class="buyukyazı1-p">Dec 5th 2021 - 8 Min read</p>
+              <h5 class="buyukyazı1-h5">Is VR the future?</h5>
             </span>
           </div>
           <div style="position: relative;">
             <img src="image/quick_read_6.jpg" alt="#">
             <span class="buyukyazı1 text-white">
-              <p>Dec 5th 2021 - 8 Min read</p>
-              <h5>Is VR the future?</h5>
+              <p class="buyukyazı1-p">Dec 5th 2021 - 8 Min read</p>
+              <h5 class="buyukyazı1-h5">Is VR the future?</h5>
             </span>
           </div>
         </div>
@@ -259,23 +273,23 @@
     </section>
 
     <section>
-      <div class="container">
+      <div class="container olderposts">
         <div style="position: relative;">
-          <h2 class="text-white bold">Older posts</h2>
+          <h2 class="text-white baslık-metin">Older posts</h2>
           <h2 class="quick bold">OLDER POSTS</h2>
         </div>
         <br><br>
         <div class="row">
           <div class="col-6">
             <a href="#">
-              <div class="d-flex bg-nav text-white">
+              <div class="d-flex column bg-nav">
                 <div>
-                  <img src="/image/older_posts_1.jpg" alt="#">
+                  <img src="/image/older_posts_1.jpg" alt="#" style="height: 200px; width: 500px;" >
                 </div>
-                <div class="text-white p-2">
-                  <p>Dec 5th 2021 - 8 Min read</p>
-                  <h5>Is VR the future?</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit tenetur hic dicta blanditiis enim harum voluptatibus nam totam architecto! Inventore excepturi, provident est incidunt facilis fuga tempora natus numquam.</p>
+                <div class="p-3 older">
+                  <p class="buyukyazı1-p">Dec 5th 2021 - 8 Min read</p>
+                  <h5 class="buyukyazı1-h5">Is VR the future?</h5>
+                  <p class="buyukyazı1-metin">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit tenetur hic dicta blanditiis enim harum voluptatibus.</p>
                 </div>
               </div>
             </a>
@@ -283,12 +297,12 @@
             <a href="#">
               <div class="d-flex bg-nav text-white">
                 <div>
-                  <img src="image/older_posts_3.jpg" alt="#">
+                  <img src="image/older_posts_3.jpg" alt="#" style="height: 200px; width: 500px;" >
                 </div>
-                <div class="text-white p-2">
-                  <p>Dec 5th 2021 - 8 Min read</p>
-                  <h5>Is VR the future?</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit tenetur hic dicta blanditiis enim harum voluptatibus nam totam architecto! Inventore excepturi, provident est incidunt facilis fuga tempora natus numquam.</p>
+                <div class="text-white p-3 older">
+                  <p class="buyukyazı1-p">Dec 5th 2021 - 8 Min read</p>
+                  <h5 class="buyukyazı1-h5">Is VR the future?</h5>
+                  <p class="buyukyazı1-metin">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit tenetur hic dicta blanditiis enim harum voluptatibus.</p>
                 </div>
               </div>
             </a>
@@ -296,12 +310,12 @@
             <a href="#">
               <div class="d-flex bg-nav text-white">
                 <div>
-                  <img src="/image/older_posts_5.jpg" alt="">
+                  <img src="/image/older_posts_5.jpg" alt="" style="height: 200px; width: 500px;" >
                 </div>
-                <div class="text-white p-2">
-                  <p>Dec 5th 2021 - 8 Min read</p>
-                  <h5>Is VR the future?</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit tenetur hic dicta blanditiis enim harum voluptatibus nam totam architecto! Inventore excepturi, provident est incidunt facilis fuga tempora natus numquam.</p>
+                <div class="text-white p-3 older">
+                  <p class="buyukyazı1-p">Dec 5th 2021 - 8 Min read</p>
+                  <h5 class="buyukyazı1-h5">Is VR the future?</h5>
+                  <p class="buyukyazı1-metin">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit tenetur hic dicta blanditiis enim harum voluptatibus.</p>
                 </div>
               </div>
             </a>
@@ -310,25 +324,12 @@
             <a href="#">
               <div class="d-flex bg-nav text-white">
                 <div>
-                  <img src="/image/older_posts_2.jpg" alt="">
+                  <img src="/image/older_posts_2.jpg" alt="" style="height: 200px; width: 500px;" >
                 </div>
-                <div class="text-white p-2">
-                  <p>Dec 5th 2021 - 8 Min read</p>
-                  <h5>Is VR the future?</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit tenetur hic dicta blanditiis enim harum voluptatibus nam totam architecto! Inventore excepturi, provident est incidunt facilis fuga tempora natus numquam.</p>
-                </div>
-              </div>
-            </a>
-            <br>
-            <a href="#">
-              <div class="d-flex bg-nav text-white">
-                <div>
-                  <img src="image/older_posts_4.jpg" alt="">
-                </div>
-                <div class="text-white p-2">
-                  <p>Dec 5th 2021 - 8 Min read</p>
-                  <h5>Is VR the future?</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit tenetur hic dicta blanditiis enim harum voluptatibus nam totam architecto! Inventore excepturi, provident est incidunt facilis fuga tempora natus numquam.</p>
+                <div class="text-white p-3 older">
+                  <p class="buyukyazı1-p">Dec 5th 2021 - 8 Min read</p>
+                  <h5 class="buyukyazı1-h5">Is VR the future?</h5>
+                  <p class="buyukyazı1-metin">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit tenetur hic dicta blanditiis enim harum voluptatibus.</p>
                 </div>
               </div>
             </a>
@@ -336,72 +337,85 @@
             <a href="#">
               <div class="d-flex bg-nav text-white">
                 <div>
-                  <img src="image/older_posts_6.jpg" alt="">
+                  <img src="image/older_posts_4.jpg" alt="" style="height: 200px; width: 500px;" >
                 </div>
-                <div class="text-white p-2">
-                  <p>Dec 5th 2021 - 8 Min read</p>
-                  <h5>Is VR the future?</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit tenetur hic dicta blanditiis enim harum voluptatibus nam totam architecto! Inventore excepturi, provident est incidunt facilis fuga tempora natus numquam.</p>
+                <div class="text-white p-3 older">
+                  <p class="buyukyazı1-p">Dec 5th 2021 - 8 Min read</p>
+                  <h5 class="buyukyazı1-h5">Is VR the future?</h5>
+                  <p class="buyukyazı1-metin">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit tenetur hic dicta blanditiis enim harum voluptatibus.</p>
+                </div>
+              </div>
+            </a>
+            <br>
+            <a href="#">
+              <div class="d-flex bg-nav text-white">
+                <div>
+                  <img src="image/older_posts_6.jpg" alt="" style="height: 200px; width: 500px;" >
+                </div>
+                <div class="text-white p-3 older">
+                  <p class="buyukyazı1-p">Dec 5th 2021 - 8 Min read</p>
+                  <h5 class="buyukyazı1-h5">Is VR the future?</h5>
+                  <p class="buyukyazı1-metin">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit tenetur hic dicta blanditiis enim harum voluptatibus.</p>
                 </div>
               </div>
             </a>
           </div>
         </div>
         <br>
-        <a href=""><p class="text-white">SEE MORE <i class="fa-solid fa-arrow-right"></i></p></a>
+        <a href=""><p class="see">SEE MORE <i class="fa-solid fa-arrow-right"></i></p></a>
       </div>
     </section>
     <br><br>
 
 
     <section>
-      <div class="container">
+      <div class="container popular">
         <div style="position: relative;">
-          <h2 class="text-white bold">Popular tags</h2>
-          <h2 class="quick bold">POPULAR TAGS</h2>
+          <h2 class="text-white baslık-metin">Popular tags</h2>
+          <h2 class="quick1">POPULAR TAGS</h2>
         </div>
         <br>
         <div>
           <div class="row">
             <div class="col">
               <a href="#">
-                <div class="p-2" style="position: relative;">
+                <div class="zoom p-2" style="position: relative;">
                   <img src="image/travel-tag.jpg" alt="">
-                  <span class="text-white ortala">#Travel</span>
+                  <span class="ortala">#Travel</span>
                 </div>
               </a>
               <a href="">
-                <div class="p-2"  style="position: relative;">
+                <div class="zoom p-2"  style="position: relative;">
                   <img src="/image/health-tag.jpg" alt="">
-                  <span class="text-white ortala">#Health</span>
+                  <span class="ortala">#Health</span>
                 </div>
               </a>
             </div>
             <div class="col">
               <a href="">
-                <div class="p-2"  style="position: relative;">
+                <div class="zoom p-2"  style="position: relative;">
                   <img src="/image/food-tag.jpg" alt="">
-                  <span class="text-white ortala">#Food</span>
+                  <span class="ortala">#Food</span>
                 </div>
               </a>
               <a href="">
-                <div class="p-2"  style="position: relative;">
+                <div class="zoom p-2"  style="position: relative;">
                   <img src="image/nature-tag.jpg" alt="">
-                  <span class="text-white ortala">#Nature</span>
+                  <span class="ortala">#Nature</span>
                 </div>
               </a>
             </div>
             <div class="col">
               <a href="">
-                <div class="p-2"  style="position: relative;">
+                <div class="zoom p-2"  style="position: relative;">
                   <img src="image/technology-tag.jpg" alt="">
-                  <span class="text-white ortala">#Technolohy</span>
+                  <span class="ortala">#Technolohy</span>
                 </div>
               </a>
               <a href="">
-                <div class="p-2"  style="position: relative;">
+                <div class="zoom p-2"  style="position: relative;">
                   <img src="image/fitness-tag.jpg" alt="">
-                  <span class="text-white ortala">#Fitness</span>
+                  <span class="ortala">#Fitness</span>
                 </div>
               </a>
             </div>
@@ -412,22 +426,22 @@
     <br><br>
 
     <section>
-      <div class="container">
+      <div class="container subscribe">
         <div style="position: relative;">
-          <h2 class="text-white bold">Newsletter</h2>
-          <h2 class="quick bold">NEWSLETTER</h2>
+          <h2 class="text-white baslık-metin">Newsletter</h2>
+          <h2 class="quick">NEWSLETTER</h2>
         </div>
       </div>  
-        <br><br><br><br>
+        <br><br><br><br><br><br>
       <div class="text-center container">
         <div style="position: relative;" class="text-white">
           <div class="ortala1">
-            <h6 style="font-size: 2rem;">Subscribe to NewsFlash</h6>
-            <p id="ortala3">Lorem ipsum dolor sit amet consectetur adipisicing quaerat dignissimos.</p>
+            <h6 class="subs" style="font-size: 2rem;">Subscribe to NewsFlash</h6>
+            <p class="metin" id="ortala3">Lorem ipsum dolor sit amet consectetur adipisicing quaerat dignissimos.</p>
             <div>
-              <form class="form d-flex">
-                <input id="email" type="text" class="form-input p-2" placeholder="Enter your email address">
-                <button class="btn bg-nav" type="submit"><i class="ri-mail-send-line"></i></button>
+              <form class="form form-konum  d-flex">
+                <input id="email" type="text" class="form-boyut p-2" placeholder="Enter your email address">
+                <a class="gonder"><i class="ri-mail-send-line"></i></a>
               </form>
             </div>
           </div>
@@ -435,56 +449,71 @@
       </div>
      
     </section>
-    <br><br><br><br><br>
-    <footer class="bg-nav">
+    <br><br><br><br><br><br>
 
-      <div class="container text-white">
-        <div class="d-flex justify-content-between">
-          <div>
-            <h2>New Flash</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, iure. Harum, animi dolores, nam, ad magni expedita.</p>
-            <div class="d-flex justify-content-between">
-              <i></i>
-              <i></i>
-              <i></i>
-              <i></i>
+
+    <footer id="footer" class="bg-nav">
+
+      <div class="container">
+        <div class="d-flex justify-content-between p-5">
+          <div style="width: 400px;">
+            <h2 class="newflash">NewsFlash</h2>
+            <p class="footer-metin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, iure. Harum, animi dolores, nam, ad magni expedita.</p>
+            <div class="d-flex justify-content-between footer-simge">
+              <ul class="d-flex p-1">
+                <li class="me-3">
+                  <a href="#"><i class="ri-instagram-line"></i></a>
+                </li>
+                <li class="me-3">
+                  <a href="#"><i class="ri-facebook-circle-line"></i></a>
+                </li>
+                <li class="me-3">
+                  <a href=""><i class="ri-twitter-line"></i></a>
+                </li>
+                <li class="me-3">
+                  <a href=""><i class="ri-pinterest-line"></i></a>
+                </li>
+              </ul>
             </div>
-            <p>©2021 NewsFlash. All rights reserved.</p>
+            <p class="footer-metin-2">©2021 NewsFlash. All rights reserved.</p>
           </div>
 
           <div>
-            <h3>Categories</h3><br>
-            <a href="">Travel</a><br>
-            <a href="">Food</a><br>
-            <a href="">Technology</a><br>
-            <a href="">Health</a><br>
-            <a href="">Nature</a><br>
-            <a href="">Fitness</a><br>
+            <h4 class="footer-baslik">CATEGORIES</h4><br>
+            <div>
+              <a class="footer-alt-baslik" href="#"><h5>Travel</h5></a><br>
+              <a class="footer-alt-baslik"  href=""><h5>Food</h5></a><br>
+              <a class="footer-alt-baslik"  href=""><h5>Technology</h5></a><br>
+              <a class="footer-alt-baslik"  href=""><h5>Health</h5></a><br>
+              <a class="footer-alt-baslik"  href=""><h5>Nature</h5></a><br>
+              <a class="footer-alt-baslik"  href=""><h5>Fitness</h5></a><br>
+            </div>
           </div>
 
           <div>
-            <h3>Useful links</h3><br>
-            <a href="">Home</a><br>
-            <a href="">Elements</a><br>
-            <a href="">Tags</a><br>
-            <a href="">Authors</a><br>
-            <a href="">Membership</a><br>
+            <h4 class="footer-baslik">USEFUL LINKS</h4><br>
+            <div>
+              <a class="footer-alt-baslik"  href=""><h5>Home</h5></a><br>
+              <a  class="footer-alt-baslik" href=""><h5>Elements</h5></a><br>
+              <a class="footer-alt-baslik"  href=""><h5>Tags</h5></a><br>
+              <a class="footer-alt-baslik"  href=""><h5>Authors</h5></a><br>
+              <a class="footer-alt-baslik"  href=""><h5>Membership</h5></a><br>
+            </div>
           </div>
 
           <div>
-            <h3>Company</h3><br>
-            <a href="">Contact us</a><br>
-            <a href="">F.A.Q</a><br>
-            <a href="">Careers</a><br>
-            <a href="">Authors</a><br>
-            <a href="">Memberships</a><br>
+            <h4 class="footer-baslik">COMPANY</h4><br>
+            <div>
+              <a class="footer-alt-baslik"  href=""><h5>Contact us</h5></a><br>
+              <a class="footer-alt-baslik"  href=""><h5>F.A.Q</h5></a><br>
+              <a class="footer-alt-baslik"  href=""><h5>Careers</h5></a><br>
+              <a class="footer-alt-baslik"  href=""><h5>Authors</h5></a><br>
+              <a class="footer-alt-baslik" href=""><h5>Memberships</h5></a><br>
+            </div>
           </div>
         </div>
       </div>
-
-    </footer>
-
-    
+    </footer>    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -495,11 +524,19 @@
     <script>
       $("#sıralı").ready(function(){
         $('.sıralı-foto').slick({
-          infinite: true,
+          infinite: false,
           slidesToShow: 3,
           slidesToScroll: 2,
           arrows: true,
-          dots: true
+          dots: true,
+          // responsive : [
+          //   {
+          //     breakpoint:576,
+          //     settings:{
+          //       slidesToShow:2,
+          //     }
+          //   }
+          // ];
         });
       });
     </script>
